@@ -36,7 +36,7 @@ ie不支持伪元素的display值为list-item
 ##### 如何实现：width 独立占用一层标签，而padding、border、margin利用流动性在内部自适应呈现
 
 #### box-sizing的作用：content-box/border-box
-#### 替换元素：原生普通文本框<input>和文本域<textarea>，尺寸由内部元素决定，且无论其display属性是inline还是block
+#### 替换元素：原生普通文本框<input>和文本域<textarea>，尺寸由内部元素决定，改变display无法使其100%自适应父元素尺寸。
 
 ### height:auto
 对于width属性，就算父元素width为auto，其百分比也是支持的；但是，对于height元素，如果父元素height为auto，只要子元素在文档流中，其百分比值就完全被忽略了。（ 父级没有具体高度值的时候，height：100%会无效）
